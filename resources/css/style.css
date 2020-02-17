@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--------------------------*/
+/*---------Basic setup-------*/
+/*---------------------------*/
+html{
+    background-color: #ffffff;
+    color: #555;
+    font-family: 'lato' 'arial' 'sens-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+/*---------Resuable component-------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section{
+    padding: 80px 0px;
+}
+
+/*---------Headings-------*/
+h1,h2,h3{
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 120px;
+    color: #ffffff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+h2:after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*---------paragrape-------*/
+.long-copy{
+    width: 70%;
+    line-height: 140%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*---------icon-------*/
+
+.icon-big{
+    font-size: 400%;
+    padding: 15px auto;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/*---------Button-------*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,color 0.2s, border 0.2s;
+
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    color: #ffffff;
+    border: 1px solid #e67e22;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+    border:1px solid #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #cf6d17;
+    color: #ffffff;
+}
+.btn-plan:link,
+.btn-plan:visited{
+    margin-left: 30%;
+}
+
+/*---------Header section-------*/
+header{
+    background-image: linear-gradient(#00000081, #00000081 ), url(img/hero.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+/*---------website header brand logo-------*/
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+/*---------Website header nav bar-------*/
+
+.main-nav{
+    float: right;
+    margin-top: 55px;
+    list-style-type: none;
+}
+
+.main-nav li{
+    float: left;
+    margin-left: 40px;
+
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    text-align: center;
+    font-size: 90%;
+    text-transform: uppercase;
+    padding: 8px 0px;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+
+/*---------Header hero text box class-------*/
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*--------section-features----------*/
+.section-features{
+    margin-bottom: -50px;
+}
+/*---------section meals-------*/
+
+.meals-showcase{
+    width: 100%;
+    list-style-type: none;
+}
+.meals-showcase li{
+    float: left;
+    width: 25%;
+    display: block;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+}
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 0.7;
+}
+/*---------section signup-------*/
+
+.section-plans{
+    background-color: #f4f4f4;
+    
+}
+
+.plan-box{
+    background-color: #ffffff;
+    border-radius: 5px;
+    width:90%;
+    margin-left: 5%;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e67e22;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-box ul li{
+    list-style-type: none;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e67e22;
+}
+.plan-box-head{
+    text-align: center;
+}
+
+/*---------how it works-------*/
+
+.app-img{
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+}
+.step-list{
+    list-style-type: none;
+    counter-reset: step;
+    margin-top: 50px;
+}
+.step-list li{
+    padding: 15px 0px;
+    float: left;
+    
+}
+.step-list li::before{
+    display: block;
+    content: counter(step);
+    counter-increment: step;
+    border: 1px solid #e67e22;
+    color: #e67e22;
+    height: 50px;
+    width: 50px;
+    float: left;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin: 40px 10px 0px 0px;
+}
+/*---------Contact Form-------*/
+.contact-form{
+    width: 60%;
+    margin: 0px auto;
+    font-size: 110%;
+    font-weight: 100;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    font-weight: 100;
+    
+}
+input[type=submit]{
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 200px;
+    background-color: #e67e22;
+    color: #ffffff;
+    border: 1px solid #e67e22;
+}
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #cf6d17;
+}
+/*---------Basic setup-------*/
+footer{
+    background-color: #333333;
+    padding: 50px;
+}
+.footer-nav{
+    list-style-type: none;
+    float: left;
+}
+.social-links{
+    list-style-type: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    float: left;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0px;
+}
+.footer-nav li a:link,
+.social-links li a:link,
+.footer-nav li a:visited,
+.social-links li a:visited{
+    text-decoration: none;
+    color: #888888;
+    border: 0;
+    transition: color 0.5s;
+}
+.footer-nav li a:hover,
+.social-links li a:hover,
+.footer-nav li a:active,
+.social-links li a:active{
+    color: #A1A1A1;
+    cursor: pointer;
+}
+.siconf:hover{
+    color: #3b5998;
+}
+.sicony:hover{
+    color: #c4302b;
+}
+.siconi:hover{
+    color:  #3f729b;
+}
+.sicong:hover{
+    color: #34A853;
+}
+footer p{
+    color: #888888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
